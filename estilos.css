@@ -1,0 +1,98 @@
+.frase{
+    font-family: 'Lobster', cursive;
+    position: relative;
+    top: -10vw;
+    left: 20vw;
+    font-size: 50px;
+    background-image: url("./Imagenes/sueño.jpg");
+}
+*{
+    margin: 10px;
+
+}
+/*Selectores Generales se le ponen a todo el codigo*/
+.deslizable{
+    position: relative;
+    top: 200px;
+    left: 0px;
+}
+.fondo{
+    /* padding es para quitar los margenes del texto y margin para el de las imagenes*/
+  padding: 0cm;
+  margin: 0;
+  background: linear-gradient(rgb(0, 119, 255), rgb(13, 13, 212) ); 
+
+}
+/*Selectores de tipo este no entendi chido la diferencia*/
+h1{
+    text-decoration: dotted;
+}
+
+/*Selectores de clase se le pueden poner a todos los que sean */
+.menu{
+    position: relative;
+    top: 20vw;
+    left: 38vw;
+}
+.tabla_1{
+    position: relative;
+    top: 0vw;
+    left: 30vw;
+    background-color: #fff;
+    border: 2px solid red ;
+}
+
+/*Selector de ID estos no se pueden repetir son unicos*/
+#titulo{
+    color: blanchedalmond;
+    font-size: 30px;
+    text-align: left;
+    text-transform: capitalize;
+}
+.PiePagina{
+    color: black ;
+    font-size: 30px;
+    text-align: left;
+    text-transform: capitalize;
+}
+.fix{
+   height: 300px;
+   background-image: url("C:\Users\grego\OneDrive\Desktop\Milks\Imagenes\pastel 1.jpg"); 
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+/*estas cosas tienen orden de importancia 
+dado que primero la pagina va a priorizar el ID despues la clase de la palabra
+y al ultimo de la clase del CSS
+Hoja de estilo en cascada*/
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none inside;
+}
+ul.slider {
+    position:relative; /*Necesitamos que el ul sea relativo*/
+}
+ul.slider li {
+    opacity: 0; /*Ocultamos todos los <li>*/
+    transition: opacity 1s;
+    position: absolute; /*Posicionamos en absoluto los <li>*/
+    right:  500px;
+    top: 0px;
+    margin: 10px;
+    padding: 0px;
+    border: 2px solid red;
+    background:#fff;
+}
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> al que apunta el enlace*/
+}
+nav {
+    position:relative;
+    top: 10px;
+    left:10px;
+}
